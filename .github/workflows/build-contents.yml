@@ -18,7 +18,7 @@ jobs:
     steps:
         - name : wake by magic-packet
           run : |
-              RESPONSE_HTTP_STATUS=$(curl -o /dev/null --connect-timeout 10 -H "Authorization: Basic ${{secrets.IPTIME_TOKEN}}" -H "Referer: http://192.168.0.1:80" -w "%{http_code}" "${{secrets.IPTIME_DDNS}}/cgi-bin/wol_apply.cgi?act=wakeup&mac=${{secrets.IPTIME_MAC}}")
+              RESPONSE_HTTP_STATUS=$(curl -o /dev/null --connect-timeout 20 -H "Authorization: Basic ${{secrets.IPTIME_TOKEN}}" "${{secrets.IPTIME_DDNS}}/cgi-bin/wol_apply.cgi?act=wakeup&mac=${{secrets.IPTIME_MAC}}")
               echo 실패
               if [ $RESPONSE_HTTP_STATUS -eq 200 ]; then
                   echo 성공
