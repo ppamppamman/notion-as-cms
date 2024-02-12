@@ -38,7 +38,7 @@ jobs:
       - name: Checkout source code # Repo checkout
         uses: actions/checkout@v4
 
-      - name: Checkout node version
+      - name: setup node version
         uses: actions/setup-node@v3
         with:
           node-version: 20
@@ -51,6 +51,12 @@ jobs:
         with:
           AUTH_TOKEN: ${{ secrets.AUTH_TOKEN }}
           NOTION_DATABASE_ID: ${{ secrets.NOTION_DATABASE_ID }}
+
+      - name: Check files
+        run: |
+          ls -a
+          cd _posts
+          ls -a
 
       - name: Commit Contents
         uses: ./.github/workflows/reusable_commit_contents
