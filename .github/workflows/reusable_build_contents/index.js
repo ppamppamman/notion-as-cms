@@ -22,6 +22,10 @@ const generate = async () => {
   const n2m = new ntm.NotionToMarkdown({ notionClient: notion });
 
   const writeFile = (mdString, idx) => {
+    const directory = fs.existsSync("./_posts");
+    if (!directory) {
+      fs.mkdirSync("./_posts");
+    }
     return new Promise((resolve) => {
       fs.writeFile(`./_posts/test${idx}.md`, mdString.parent, () => resolve());
     });
