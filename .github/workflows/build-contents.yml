@@ -45,7 +45,6 @@ jobs:
 
       - name: Install Dependencies
         run: npm install
-        working-directory: $HOME
 
       - name: act
         uses: ./.github/workflows/reusable_build_contents
