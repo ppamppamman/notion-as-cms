@@ -1,7 +1,7 @@
 const github = require("@actions/github");
 const fs = require("fs");
 
-// GitHub personal access token을 설정합니다.
+const core = require("@actions/core");
 const token = core.getInput("GITHUB_TOKEN");
 
 // Octokit 인스턴스를 생성합니다.
