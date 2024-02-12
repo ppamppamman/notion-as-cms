@@ -43,3 +43,16 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+    
+  hibernate:
+    needs: [WOL, build]
+    runs-on: ubuntu-latest
+    steps:
+        - name : sleep by REST Server
+          run : |
+              RESPONSE_HTTP_STATUS=$(curl -o /dev/null --connect-timeout 20 -w "%{http_code}" "${{secrets.IPTIME_DDNS}}:${{secrets.PORT_FOR_SLEEP}}/sleep")
+              if [ $RESPONSE_HTTP_STATUS -eq 200 ]; then
+                  echo 성공
+              else
+                  echo 실패
+              fi
