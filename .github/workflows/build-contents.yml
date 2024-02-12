@@ -33,7 +33,7 @@ jobs:
     steps:
       - name: execute chmod permission
         run: |
-          chown -R /home/jaeuk/actions-runner/_work/
+          chmod 777 /home/jaeuk/actions-runner/_work/
 
       - name: Checkout source code # Repo checkout
         uses: actions/checkout@v3
