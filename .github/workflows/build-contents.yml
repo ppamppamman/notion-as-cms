@@ -18,7 +18,7 @@ jobs:
     steps:
         - name : wake by magic-packet
           run : |
-              RESPONSE_HTTP_STATUS=$(curl --connect-timeout 20 -H "Authorization: Basic ${{secrets.IPTIME_TOKEN}}" -w "%{http_code}" -X GET "${{secrets.IPTIME_DDNS}}/cgi-bin/wol_apply.cgi?act=wakeup&mac=${{secrets.IPTIME_MAC}}")
+              RESPONSE_HTTP_STATUS=$(curl -o /dev/null --connect-timeout 20 -H "Authorization: Basic ${{secrets.IPTIME_TOKEN}}" -w "%{http_code}" -X GET "${{secrets.IPTIME_DDNS}}/cgi-bin/wol_apply.cgi?act=wakeup&mac=${{secrets.IPTIME_MAC}}")
               if [ $RESPONSE_HTTP_STATUS -eq 200 ]; then
                   echo 성공
               else
@@ -50,7 +50,8 @@ jobs:
     steps:
         - name : sleep by REST Server
           run : |
-              RESPONSE_HTTP_STATUS=$(curl --connect-timeout 20 -w "%{http_code}" -X GET "${{secrets.IPTIME_DDNS}}:${{secrets.PORT_FOR_SLEEP}}/sleep")
+              echo ${{secrets.PORT_FOR_SLEEP}}
+              RESPONSE_HTTP_STATUS=$(curl -o /dev/null --connect-timeout 20 -w "%{http_code}" -X GET "${{secrets.IPTIME_DDNS}}/sleep")
               if [ $RESPONSE_HTTP_STATUS -eq 200 ]; then
                   echo 성공
               else
