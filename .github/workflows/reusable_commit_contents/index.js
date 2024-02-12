@@ -2,7 +2,7 @@ const { Octokit } = require("@octokit/rest");
 const fs = require("fs");
 
 const core = require("@actions/core");
-const token = core.getInput("GITHUB_TOKEN");
+const token = core.getInput("PAT");
 
 // Octokit 인스턴스를 생성합니다.
 const octokit = new Octokit({ auth: token });

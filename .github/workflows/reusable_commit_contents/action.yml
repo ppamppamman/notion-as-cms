@@ -1,8 +1,8 @@
 name: "reusable_commit_contents"
 description: "reusable_commit_contents"
 inputs:
-  GITHUB_TOKEN:
-    description: "github token"
+  PAT:
+    description: "PAT token"
     required: true
 
 runs:

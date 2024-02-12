@@ -61,7 +61,7 @@ jobs:
       - name: Commit Contents
         uses: ./.github/workflows/reusable_commit_contents
         with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PAT: ${{ secrets.PAT }}
 
   hibernate:
     needs: [WOL, build]
