@@ -31,13 +31,17 @@ jobs:
     runs-on: self-hosted
 
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 18
+      - name: Checkout source code # Repo checkout
+        uses: actions/checkout@v3
+
+      - name: Checkout node version
+        run: node -v
+      # - uses: actions/setup-node@v3
+      #   with:
+      #     node-version: 18
 
       - name: Install Dependencies
-        run: npm ci
+        run: npm install
 
       - name: act
         uses: ./github/workflows/reusable_build_contents
