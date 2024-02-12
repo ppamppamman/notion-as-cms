@@ -32,7 +32,6 @@ jobs:
 
     steps:
       - name: execute chmod permission
-        options: --user jaeuk
         run: |
           chown -R /home/jaeuk/actions-runner/_work/
 
