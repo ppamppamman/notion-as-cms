@@ -50,7 +50,7 @@ jobs:
     steps:
         - name : sleep by REST Server
           run : |
-              echo ${{secrets.PORT_FOR_SLEEP}}
+              curl --version
               RESPONSE_HTTP_STATUS=$(curl -o /dev/null --connect-timeout 20 -w "%{http_code}" -X GET "${{secrets.IPTIME_DDNS}}/sleep")
               if [ $RESPONSE_HTTP_STATUS -eq 200 ]; then
                   echo 성공
