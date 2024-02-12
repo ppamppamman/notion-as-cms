@@ -1,11 +1,11 @@
-const github = require("@actions/github");
+const { Octokit } = require("@octokit/rest");
 const fs = require("fs");
 
 const core = require("@actions/core");
 const token = core.getInput("GITHUB_TOKEN");
 
 // Octokit 인스턴스를 생성합니다.
-const octokit = new github.getOctokit(token);
+const octokit = new Octokit({ auth: token });
 
 // 리포지토리 정보를 설정합니다.
 const owner = "ppamppamman";
