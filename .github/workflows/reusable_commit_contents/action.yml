@@ -1,0 +1,10 @@
+name: "reusable_commit_contents"
+description: "reusable_commit_contents"
+inputs:
+  GITHUB_TOKEN:
+    description: "github token"
+    required: true
+
+runs:
+  using: "node16"
+  main: "index.js"

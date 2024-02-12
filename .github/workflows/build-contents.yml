@@ -46,11 +46,16 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
-      - name: act
+      - name: Build Contents
         uses: ./.github/workflows/reusable_build_contents
         with:
           AUTH_TOKEN: ${{ secrets.AUTH_TOKEN }}
           NOTION_DATABASE_ID: ${{ secrets.NOTION_DATABASE_ID }}
+
+      - name: Commit Contents
+        uses: ./.github/workflows/reusable_commit_contents
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   hibernate:
     needs: [WOL, build]
