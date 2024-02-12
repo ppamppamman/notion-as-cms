@@ -23,7 +23,7 @@ const generate = async () => {
 
   const writeFile = (mdString, idx) => {
     return new Promise((resolve) => {
-      fs.writeFile(`_posts/test${idx}.md`, mdString.parent, () => resolve());
+      fs.writeFile(`./_posts/test${idx}.md`, mdString.parent, () => resolve());
     });
   };
 

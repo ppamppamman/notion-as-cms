@@ -11,7 +11,7 @@ const octokit = new github.getOctokit(token);
 const owner = "ppamppamman";
 const repo = "notion-as-cms";
 const branch = "main"; // 또는 다른 브랜치 이름
-const postsDirectory = "_posts";
+const postsDirectory = "./_posts";
 
 // _posts 디렉토리에서 파일 리스트 가져오기
 const files = fs.readdirSync(postsDirectory);
