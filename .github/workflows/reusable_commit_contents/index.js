@@ -51,7 +51,7 @@ const commitFiles = async () => {
     repo,
     message: "Add: Add new published contents",
     tree: tree.data.sha,
-    parents: [baseTreeSha],
+    parents: [branchData.commit.data.sha],
   });
 
   // 브랜치 업데이트
