@@ -1,0 +1,13 @@
+name: "Hello World"
+description: "Greet someone and record the time"
+inputs:
+  AUTH_TOKEN:
+    description: "AUTH_TOKEN"
+    required: true
+  NOTION_DATABASE_ID:
+    description: "NOTION_DATABASE_ID"
+    required: true
+
+runs:
+  using: "node18"
+  main: "index.js"

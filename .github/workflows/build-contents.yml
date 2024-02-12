@@ -4,9 +4,9 @@ name: "[Automated] build-contents action run by own desktop"
 on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
   push:
-    branches: [ "main" ]
+    branches: ["main"]
   pull_request:
-    branches: [ "main" ]
+    branches: ["main"]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -16,46 +16,46 @@ jobs:
     name: WOL
     runs-on: ubuntu-latest
     steps:
-        - name : wake by magic-packet
-          run : |
-              echo "GitHub Server URL: $GITHUB_SERVER_URL"
-              RESPONSE_HTTP_STATUS=$(curl -o /dev/null --connect-timeout 20 -H "Authorization: Basic ${{secrets.IPTIME_TOKEN}}" -w "%{http_code}" -X GET "${{secrets.IPTIME_DDNS}}:${{secrets.PORT_FOR_ACCESS}}/cgi-bin/wol_apply.cgi?act=wakeup&mac=${{secrets.IPTIME_MAC}}")
-              if [ $RESPONSE_HTTP_STATUS -eq 200 ]; then
-                  echo 성공
-              else
-                  echo 실패
-              fi
-              
+      - name: wake by magic-packet
+        run: |
+          echo "GitHub Server URL: $GITHUB_SERVER_URL"
+          RESPONSE_HTTP_STATUS=$(curl -o /dev/null --connect-timeout 20 -H "Authorization: Basic ${{secrets.IPTIME_TOKEN}}" -w "%{http_code}" -X GET "${{secrets.IPTIME_DDNS}}:${{secrets.PORT_FOR_ACCESS}}/cgi-bin/wol_apply.cgi?act=wakeup&mac=${{secrets.IPTIME_MAC}}")
+          if [ $RESPONSE_HTTP_STATUS -eq 200 ]; then
+              echo 성공
+          else
+              echo 실패
+          fi
+
   build:
     needs: [WOL]
     runs-on: self-hosted
 
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 18
 
-      # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: echo Hello, world!
+      - name: Install Dependencies
+        run: npm install
 
-      # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
-    
+      - name: act
+        uses: ./github/workflows/reusable_build_contents
+        with:
+          AUTH_TOKEN: ${{ secrets.AUTH_TOKEN }}
+          NOTION_DATABASE_ID: ${{ secrets.NOTION_DATABASE_ID }}
+
   hibernate:
     needs: [WOL, build]
     runs-on: ubuntu-latest
     steps:
-        - name : sleep by REST Server
-          run : |
-              echo "GitHub Server URL: $GITHUB_SERVER_URL"
-              curl --version
-              RESPONSE_HTTP_STATUS=$(curl -o /dev/null --connect-timeout 20 -w "%{http_code}" -X GET "${{secrets.IPTIME_DDNS}}:${{secrets.PORT_FOR_SLEEP}}/")
-              if [ $RESPONSE_HTTP_STATUS -eq 200 ]; then
-                  echo 성공
-              else
-                  echo 실패
-              fi
+      - name: sleep by REST Server
+        run: |
+          echo "GitHub Server URL: $GITHUB_SERVER_URL"
+          curl --version
+          RESPONSE_HTTP_STATUS=$(curl -o /dev/null --connect-timeout 20 -w "%{http_code}" -X GET "${{secrets.IPTIME_DDNS}}:${{secrets.PORT_FOR_SLEEP}}/")
+          if [ $RESPONSE_HTTP_STATUS -eq 200 ]; then
+              echo 성공
+          else
+              echo 실패
+          fi
