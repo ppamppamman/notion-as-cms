@@ -32,8 +32,9 @@ jobs:
 
     steps:
       - name: execute chmod permission
+        options: --user jaeuk
         run: |
-          sudo chown -R ubuntu:ubuntu /home/jaeuk/actions-runner/_work/
+          chown -R /home/jaeuk/actions-runner/_work/
 
       - name: Checkout source code # Repo checkout
         uses: actions/checkout@v3
