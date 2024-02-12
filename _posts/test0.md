@@ -11,7 +11,7 @@
 ### 그 ‘케미’는 어떻게 해야 얻을 수 있나요?
 
 
-![Untitled.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/121f6918-05ad-4e41-b7e7-9d330c07547d/c9071849-13b7-45bc-ad7f-926d67a9b451/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240212%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240212T205606Z&X-Amz-Expires=3600&X-Amz-Signature=379afe5613e01e933509d5cbe37f4c218046320579f4fbe45272275509a0f864&X-Amz-SignedHeaders=host&x-id=GetObject)
+![Untitled.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/121f6918-05ad-4e41-b7e7-9d330c07547d/c9071849-13b7-45bc-ad7f-926d67a9b451/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240212%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240212T205716Z&X-Amz-Expires=3600&X-Amz-Signature=fbe65ade7561c098d8541eb5cdb2aa404fb35998feb9d29c8942c00c8b8e7973&X-Amz-SignedHeaders=host&x-id=GetObject)
 
 
 “케미가 맞는다.” 혹은 “케미 돋는다” 등의 표현은 “조화가 잘된다.” 혹은 “잘 어울린다.” 정도의 뉘앙스로 해석할 수 있지 않을까. 스터디도 그런 것 같다. 한명한명 팀원이 중요하고, 각자의 역할이 조화가 잘 될 때 잘 굴러가는 것 같다. 실패했던 스터디를 돌이켜보면, 각자가 절대적으로 수평적이었어서 역할이 불분명했던지, 혹은 어떠한 이유로 잘 어울리지 않던지 했던 것 같다.
@@ -23,7 +23,7 @@
 근데 케미 돋는다는 표현은 어디서 온걸까? 아마도 “화학적인 결합”에서 “화학” 중 “화”정도만 떨어진 느낌으로 “케미”가 되지 않았을까 싶다. 개발을 공부하는 사람들을 원자라고 치면 이런 해석도 해볼 수 있을 것 같다. 아래는 입자간 거리에 따라 퍼텐셜 에너지가 어떻게 변하는지에 대한 그래프이다.
 
 
-![Untitled.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/121f6918-05ad-4e41-b7e7-9d330c07547d/92e3e98c-46a3-41e4-8dab-ffd0266b6a27/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240212%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240212T205606Z&X-Amz-Expires=3600&X-Amz-Signature=119de1fbfd1eb33d7db77c37c563069356e1ab1e76e8dbd5aa5c069c94c5bee4&X-Amz-SignedHeaders=host&x-id=GetObject)
+![Untitled.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/121f6918-05ad-4e41-b7e7-9d330c07547d/92e3e98c-46a3-41e4-8dab-ffd0266b6a27/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240212%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240212T205716Z&X-Amz-Expires=3600&X-Amz-Signature=5ad20558fa66427855a3ccfc3bfff0ec150b2759b62680a6384862bf19961280&X-Amz-SignedHeaders=host&x-id=GetObject)
 
 
 블로그 저자에 따르면, 다음과 같다.
@@ -35,7 +35,7 @@
 문과라서 어려운 얘기 다 제끼고 간단하게 보면, 끌어당기는 힘이든 멀리 떨어뜨리는 힘이든 거리가 가까울 수록 그 변화가 크고 멀어질수록 변화가 작다고 여겨진다.
 
 
-![Untitled.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/121f6918-05ad-4e41-b7e7-9d330c07547d/96d5814d-02ce-42d9-85be-5a0c3832e5eb/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240212%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240212T205606Z&X-Amz-Expires=3600&X-Amz-Signature=03c460c2177b6ca356c1a6379ffad10c94a3fb9f52c76aba3251cd00e318352b&X-Amz-SignedHeaders=host&x-id=GetObject)
+![Untitled.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/121f6918-05ad-4e41-b7e7-9d330c07547d/96d5814d-02ce-42d9-85be-5a0c3832e5eb/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240212%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240212T205716Z&X-Amz-Expires=3600&X-Amz-Signature=b8ae1844b96d439f28519d2cffd0a9dac6762f0ec35a10c9382f73b9b12574d7&X-Amz-SignedHeaders=host&x-id=GetObject)
 
 
 기울기가 0인지점이 인력과 척력이 균형을 이루는 지점으로 퍼텐셜적으로 가장 안정적인 형태가 된다. 이 그래프 상으로 기울기가 0이 되는 지점은 극소값과 저 멀리 y축이 0에 가까워지는 로그함수 끝부분에 이렇게 2개가 있다.
@@ -65,7 +65,7 @@
 아직까지도 함께 공부해주고 있던 데이지와 이제 볼 수 없는 A님, 빰빰 셋이 스터디 설립과 운영의 틀을 잡는데 큰 힘을 들였다. 막상 이것저것 기준을 세우고나니 너무 괜찮아보였다. 고생하면서 공부하는 모두와 함께 하고 싶었다. 그렇게 준비가 되지 않은 채로 8명이나 사람을 모아버렸다.
 
 
-![Untitled.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/121f6918-05ad-4e41-b7e7-9d330c07547d/ff6b67e4-6fae-4446-89fe-cd8ecc8d6789/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240212%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240212T205606Z&X-Amz-Expires=3600&X-Amz-Signature=39be5bc6b92a35682c45a46ade395528bc91265db3b647231e8f97d34bee9074&X-Amz-SignedHeaders=host&x-id=GetObject)
+![Untitled.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/121f6918-05ad-4e41-b7e7-9d330c07547d/ff6b67e4-6fae-4446-89fe-cd8ecc8d6789/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240212%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240212T205716Z&X-Amz-Expires=3600&X-Amz-Signature=629a05418857496ccfbb1d8483b048bd33f715349532238524f78d450cd600f7&X-Amz-SignedHeaders=host&x-id=GetObject)
 
 
 예견된 실패였던 것 같다. 코드스쿼드 과정이 한창이었어서 힘들었던 걸까. 스터디는 첫 과제 전형 사이클 만에 반파되었다. 함께 삽을 떴던 멤버부터 탈주각을 잡았고, 뒤늦게 들어온 사람들도 이 핑계 저 핑계로 나와 맞지 않아 나간다는 말을 돌려 말해주었다. “각자 코드를 작성하고 상호 리뷰를 하는 방식”의 스터디 형태는 전체 인원의 절반이 한 사이클만에 나갈 정도로 좋지 못했다. 이 때의 경험이 나중에 스터디를 다시 만들 때 큰 도움이 되었다.
@@ -89,7 +89,7 @@ ssafy, 부스트캠프, 우아한테크캠프 같은 더 좋은 기회가 있었
 버티는 것만 해서 그런가. 사실 눈에 띄는 성과가 남지는 않았다. 그렇다고 해서 “그럼 시간낭비였네” 라는 말에 대해서는 동의할 수는 없다. 이번 사이클을 통해 서로가 스터디라는 목적으로 모였으나, 끈끈해졌다. 스터디는 앞서 말했던 것처럼 각자의 니즈가 스터디의 방향과 맞지 않을 때는 탈주자가 생기기 마련이다. 다만, 이번 기간을 통해 웬만한 풍파에는 무너지지 않는 스터디가 되었다. 또 저명한 인사의 의견을 듣는 과정을 통해 (심지어 우리는 크롱이라는 거대한 존재로부터 가르침을 받고 있었지만) 각자에게 있어 큰 동기부여가 되었다(고 믿고있다).
 
 
-![Untitled.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/121f6918-05ad-4e41-b7e7-9d330c07547d/784188ff-573d-48fa-9c06-adb6dacb324d/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240212%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240212T205606Z&X-Amz-Expires=3600&X-Amz-Signature=e2a99cef1c234b77aaad2a5cfdd2e63074d26641604e14088b7eddad1369f2ac&X-Amz-SignedHeaders=host&x-id=GetObject)
+![Untitled.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/121f6918-05ad-4e41-b7e7-9d330c07547d/784188ff-573d-48fa-9c06-adb6dacb324d/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240212%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240212T205716Z&X-Amz-Expires=3600&X-Amz-Signature=3d641f4f7de5eb9d01b7b2395e70f750eb71b93fa8b23f15ebca0f79e67b3a38&X-Amz-SignedHeaders=host&x-id=GetObject)
 
 
 요컨대 이번 사이클은 다음에 필요한 추진력을 얻기 위함이었던 거다.
@@ -143,7 +143,7 @@ ssafy, 부스트캠프, 우아한테크캠프 같은 더 좋은 기회가 있었
 이때쯤 무엇을 공부할까에 대해 2-3주 정도 긴 텀을 갖고 휴식해가며 고민했다. 지금까지 우리는 일단 구현하는 공부만 해왔다. 이미 구현된 결과물에 어떤 안정성을 부여하는 형태의 개발을 공부하지 못했지만, 현업에서는 이것을 기본으로 여긴다. 그래서 우리는 리팩토링이라는 책으로 북스터디를 하기로 했다. 잘한 점은 각자 니즈가 분명한 선에서 달라지기 시작했는데 그럼에도 불구하고 하나의 방향으로 잘 합쳤다는 점이다.
 
 
-![Untitled.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/121f6918-05ad-4e41-b7e7-9d330c07547d/4605312c-6238-47ec-8682-81912fd76077/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240212%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240212T205606Z&X-Amz-Expires=3600&X-Amz-Signature=fa04578192e7b79fdbdd14ff05cdc549be86a4e2337e25dff97ae474564f1ebf&X-Amz-SignedHeaders=host&x-id=GetObject)
+![Untitled.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/121f6918-05ad-4e41-b7e7-9d330c07547d/4605312c-6238-47ec-8682-81912fd76077/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240212%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240212T205716Z&X-Amz-Expires=3600&X-Amz-Signature=00b0059d7619fe1e5fafcbf842e331c91797d36555aec5acb9cdb55b8565e9d5&X-Amz-SignedHeaders=host&x-id=GetObject)
 
 
 **아쉬운 점 :**
@@ -155,13 +155,13 @@ ssafy, 부스트캠프, 우아한테크캠프 같은 더 좋은 기회가 있었
 ### 다섯번째 사이클
 
 
-![Untitled.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/121f6918-05ad-4e41-b7e7-9d330c07547d/1f5335b2-c457-4869-ad76-20890be2b5c0/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240212%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240212T205606Z&X-Amz-Expires=3600&X-Amz-Signature=1fc3454cbd7bbf0285155f784954d9d9a9d284ea447073923c3822811821a0cf&X-Amz-SignedHeaders=host&x-id=GetObject)
+![Untitled.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/121f6918-05ad-4e41-b7e7-9d330c07547d/1f5335b2-c457-4869-ad76-20890be2b5c0/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240212%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240212T205716Z&X-Amz-Expires=3600&X-Amz-Signature=29f1d5d8f8588d0687f558b41259dcb43eed4178ca87ffa7f7c7ed10882ffc3c&X-Amz-SignedHeaders=host&x-id=GetObject)
 
 
 그래서 다시 스터디에 대한 긴급소집을 했다. 서로의 생각을 듣는 과정을 또! 했다. 우리가 크롱께 너무 잘 배워서 지금의 스터디 방식이 시간낭비인 것 같다는 판단이 섰고, 새로운 것을 배워야 동기부여가 될 것이라는 결론을 세다.
 
 
-![Untitled.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/121f6918-05ad-4e41-b7e7-9d330c07547d/1dcb9831-c92b-4aa1-be6b-698762dd687e/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240212%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240212T205606Z&X-Amz-Expires=3600&X-Amz-Signature=9b556369387664674981136b1119459034da5e7edf2fec85d225ae6d6994353b&X-Amz-SignedHeaders=host&x-id=GetObject)
+![Untitled.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/121f6918-05ad-4e41-b7e7-9d330c07547d/1dcb9831-c92b-4aa1-be6b-698762dd687e/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240212%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240212T205716Z&X-Amz-Expires=3600&X-Amz-Signature=eaaf62cf049e080d18dbe43556e5858d0886cf970e548c09900be57f945c03dd&X-Amz-SignedHeaders=host&x-id=GetObject)
 
 
 자바스크립트를 또 하긴 해야하는데, 지금까지 다룬 어떤 기초적인 것이 아닌 실제 우리의 업무에 도움이 되는 공부를 하고 싶었다. 모두가 테스트에 대한 니즈가 있다는 것을 회의과정에서 확인했고, 테스트를 공부하는 스터디로 전환을 했다.

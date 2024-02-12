@@ -35,7 +35,7 @@ image_desc: "SPA 만들기"
 리액트가 훅스기반의 함수형 컴포넌트로 개발 방향이 전환되면서 이전보다는 덜 신경 쓰게 되는 것이 개인적으로는 라이프 사이클이라고 생각한다. 클래스 기반의 리액트 개발을 할 때는 라이프사이클을 본격적으로 사용했느냐라고 물으면 그건 아니다. 클래스 기반의 리액트 프로젝트는 아직 직접 다뤄본 적이 없다. 다만 뷰로 개발을 할때보다 혹은 클래스 기반의 리액트 프로젝트 코드를 볼때보다는 확실히 덜 신경쓴다는 느낌이다.
 
 
-![Untitled.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/121f6918-05ad-4e41-b7e7-9d330c07547d/d87eed2b-e7a7-4f52-9437-d931e7337e83/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240212%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240212T205605Z&X-Amz-Expires=3600&X-Amz-Signature=14669a4775d9100b3b003dc53084a3903ed9acaa94234bdad9be7b19926dfac1&X-Amz-SignedHeaders=host&x-id=GetObject)
+![Untitled.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/121f6918-05ad-4e41-b7e7-9d330c07547d/d87eed2b-e7a7-4f52-9437-d931e7337e83/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240212%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240212T205716Z&X-Amz-Expires=3600&X-Amz-Signature=5ac2571dfcc49c0d60f1fe606e171f4088b7f390a0a426a0332e7c92d6fc865e&X-Amz-SignedHeaders=host&x-id=GetObject)
 
 
 처음부터 리액트 라이프사이클의 모든 함수를 동일하게 만들어 사용하지는 않았고, 심지어 쓰지 않은 메소드들도 있다. 그럼에도 불구하고 이 주제로 글을 쓰는 이유는 글이나 누군가의 발표 영상으로나 접하던 브라우저의 렌더링 방식을 본격적으로 고민해볼 수 있었기 때문이다.
